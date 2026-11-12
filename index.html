@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ShopEase - Online Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">🛍️ ShopEase</div>
+        <div class="tagline">Smart Shopping. Easy Checkout.</div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Welcome to ShopEase</h1>
+            <p>Find your favourite products at great prices.</p>
+            <a href="#products-section" class="shop-now">Shop Now</a>
+        </div>
+    </section>
+
+
+    <!-- Products -->
+    <section id="products-section">
+
+        <h2 class="section-title">Featured Products</h2>
+
+        <div class="products">
+
+            <!-- Product 1 -->
+            <div class="product">
+                <div class="product-image">💻</div>
+                <h3>Laptop</h3>
+                <p>Price: ₹50000</p>
+                <button>Add to Cart</button>
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product">
+                <div class="product-image">🎧</div>
+                <h3>Headphones</h3>
+                <p>Price: ₹2000</p>
+                <button>Add to Cart</button>
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product">
+                <div class="product-image">🖱️</div>
+                <h3>Mouse</h3>
+                <p>Price: ₹800</p>
+                <button>Add to Cart</button>
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product">
+                <div class="product-image">⌨️</div>
+                <h3>Keyboard</h3>
+                <p>Price: ₹1500</p>
+                <button>Add to Cart</button>
+            </div>
+
+
+            <!-- Product 5 -->
+            <div class="product">
+                <div class="product-image">📱</div>
+                <h3>Smartphone</h3>
+                <p>Price: ₹25000</p>
+                <button>Add to Cart</button>
+            </div>
+
+
+            <!-- Product 6 -->
+            <div class="product">
+                <div class="product-image">⌚</div>
+                <h3>Smart Watch</h3>
+                <p>Price: ₹3500</p>
+                <button>Add to Cart</button>
+            </div>
+
+
+            <!-- Product 7 -->
+            <div class="product">
+                <div class="product-image">📷</div>
+                <h3>Camera</h3>
+                <p>Price: ₹40000</p>
+                <button>Add to Cart</button>
+            </div>
+
+
+            <!-- Product 8 -->
+            <div class="product">
+                <div class="product-image">🎮</div>
+                <h3>Gaming Controller</h3>
+                <p>Price: ₹3000</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Shopping Cart -->
+    <section class="cart-section">
+
+        <h2 class="section-title">🛒 Your Shopping Cart</h2>
+
+        <div id="cart">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+
+        <div class="total-box">
+            <h3>Total: ₹<span id="total">0</span></h3>
+        </div>
+
+        <button id="checkout" class="checkout-button">
+            Proceed to Checkout
+        </button>
+
+    </section>
+
+
+    <!-- Checkout -->
+    <section id="checkout-form">
+
+        <h2 class="section-title">💳 Checkout</h2>
+
+        <div class="checkout-content">
+
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+
+            <label>Phone</label>
+            <input type="text" id="phone" placeholder="Enter 10 digit phone number">
+
+
+            <label>Address</label>
+            <textarea id="address" placeholder="Enter your address"></textarea>
+
+
+            <button id="place-order">
+                Place Order
+            </button>
+
+            <p id="message"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 ShopEase | Online Shopping Cart Management</p>
+        <p>Built using HTML, CSS & JavaScript | Tested with Playwright</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
