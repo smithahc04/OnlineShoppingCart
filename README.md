@@ -1,12 +1,12 @@
 # Online Shopping Cart Management
 
-## Project Overview
+## 1. Project Overview
 
 This project is an Online Shopping Cart Management system developed using HTML, CSS and JavaScript.
 
-Playwright is used as the automated testing tool to test the application.
+Playwright is used as the automated testing tool to perform end-to-end testing of the application.
 
-## Technologies Used
+## 2. Technologies Used
 
 - HTML
 - CSS
@@ -14,7 +14,7 @@ Playwright is used as the automated testing tool to test the application.
 - Playwright
 - Node.js
 
-## Main Features
+## 3. Main Features
 
 - Add products to cart
 - Increase product quantity
@@ -25,29 +25,96 @@ Playwright is used as the automated testing tool to test the application.
 - Input validation
 - Order confirmation
 
-## Test Cases
+## 4. Prerequisites
 
-| Test Case ID | Test Scenario / Objective | Input Data | Expected Result | Author |
-|---|---|---|---|---|
-| TC01 | Add product to cart | Laptop | Laptop is added and total is ₹50,000 | Student A |
-| TC02 | Increase product quantity | Laptop × 2 | Quantity becomes 2 and total is ₹1,00,000 | Student A |
-| TC03 | Checkout with empty cart | No product | Shows "Please add a product to the cart." | Student A |
-| TC04 | Reject invalid email | madiha@gmail | Shows "Please enter a valid email." | Student A |
-| TC05 | Reject invalid phone | 12345 | Shows phone number error | Student A |
-| TC06 | Remove product | Laptop | Product is removed and total becomes ₹0 | Student A |
-| TC07 | Place valid order | Valid name, email, phone and address | Shows "Order placed successfully!" | Student A |
+Before running the project, make sure the following are installed:
 
-## Playwright Test Execution
+- Node.js and npm
+- Visual Studio Code (recommended)
+- A web browser such as Google Chrome
 
-Total Test Cases: 7
+## 5. Installation and Execution Procedure
 
-Passed: 7
+### Step 1: Clone or Download the Repository
 
-Failed: 0
+Clone the GitHub repository:
 
-Test Tool: Playwright
+```bash
+git clone https://github.com/smithahc04/OnlineShoppingCart.git
+```
 
-## Defect Found and Fixed
+Open the downloaded project folder in Visual Studio Code.
+
+### Step 2: Install Project Dependencies
+
+Open the terminal inside the project folder and execute:
+
+```bash
+npm install
+```
+
+Install the required Playwright browser if it is not already installed:
+
+```bash
+npx playwright install
+```
+
+### Step 3: Start the Application
+
+Open a terminal inside the project folder and execute:
+
+```bash
+npx http-server -p 8000
+```
+
+If npm asks permission to install http-server, enter `y` and press Enter.
+
+The application will be available at:
+
+`http://localhost:8000`
+
+Keep this terminal running while executing the tests.
+
+### Step 4: Execute Playwright Tests
+
+Open a second terminal in the same project folder and execute:
+
+```bash
+npx playwright test
+```
+
+Playwright will automatically execute the test cases and display the results in the terminal.
+
+### Step 5: View the HTML Test Report
+
+To view the detailed test execution report, execute:
+
+```bash
+npx playwright show-report
+```
+
+The HTML report displays the test results, including passed and failed test cases.
+
+## 6. Test Cases
+
+| Test Case ID | Test Scenario / Objective | Input Data | Expected Result |
+|---|---|---|---|
+| TC01 | Add product to cart | Laptop | Laptop is added and total is ₹50,000 |
+| TC02 | Increase product quantity | Laptop × 2 | Quantity becomes 2 and total is ₹1,00,000 |
+| TC03 | Checkout with empty cart | No product | Shows "Please add a product to the cart." |
+| TC04 | Reject invalid email | madiha@gmail | Shows "Please enter a valid email." |
+| TC05 | Reject invalid phone | 12345 | Shows phone number error |
+| TC06 | Remove product | Laptop | Product is removed and total becomes ₹0 |
+| TC07 | Place valid order | Valid name, email, phone and address | Shows "Order placed successfully!" |
+
+## 7. Playwright Test Execution Results
+
+- Total Test Cases: 7
+- Passed: 7
+- Failed: 0
+- Test Tool: Playwright
+
+## 8. Defect Found and Fixed
 
 ### DEF-01: Invalid Email Accepted
 
@@ -60,7 +127,7 @@ Test Tool: Playwright
 - Fix: Added validation to check for both `@` and `.`.
 - Status: Fixed
 
-## Edge Cases Tested
+## 9. Edge Cases Tested
 
 1. Empty cart checkout
 2. Invalid email format
@@ -70,7 +137,7 @@ Test Tool: Playwright
 6. Removing a product from the cart
 7. Valid checkout with all required details
 
-## Playwright Evaluation
+## 10. Playwright Evaluation
 
 ### Advantages
 
